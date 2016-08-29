@@ -1,0 +1,7 @@
+{
+    "projects":[
+        "Core",
+        "Test.Unit",
+        "Test.Integration"
+    ]
+}

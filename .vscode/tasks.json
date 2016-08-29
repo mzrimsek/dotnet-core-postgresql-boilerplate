@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "options": {
+        "cwd": "${workspaceRoot}/Core"
+    },
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [],
+            "isBuildCommand": true,
+            "showOutput": "silent",
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
