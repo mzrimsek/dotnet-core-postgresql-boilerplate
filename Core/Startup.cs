@@ -33,14 +33,6 @@ namespace Core
         public void Configure(IApplicationBuilder app)
         {
             app.UseMvc();
-
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync(
-                    "Hello World of the last resort. The Time is: " +
-                    DateTime.Now.ToString("hh:mm:ss tt"));
-
-            });
         }
     }
 }
