@@ -2,6 +2,7 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using Core.Models.Database;
 using Core.Respositories;
+using Core.Mappers;
 
 namespace Core.Controllers
 {
@@ -19,7 +20,9 @@ namespace Core.Controllers
         {
             var email = "test@user.com";
             var user = _userRepository.GetByEmail(email);
-            return View(user);
+
+            var userViewModel = UserViewModelMapper.MapFrom(user);
+            return View(userViewModel);
         }
 
         [HttpGet("/about")]

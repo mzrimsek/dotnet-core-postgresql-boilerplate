@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Core.Models.Database
 {
     [Table("user")]
-    public class User
+    public class UserDatabaseModel
     {
         [Column("id")]
         public int Id { get; set; }

@@ -12,12 +12,12 @@ namespace Core.Respositories
             _databaseContext = databaseContext;
         }
 
-        public User GetByEmail(string email)
+        public UserDatabaseModel GetByEmail(string email)
         {
             return _databaseContext.Users.SingleOrDefault(x => x.Email == email);
         }
 
-        public void Save(User user)
+        public void Save(UserDatabaseModel user)
         {
             var userFromDb = _databaseContext.Users.SingleOrDefault(x => x.Id == user.Id);
             if(userFromDb != null)

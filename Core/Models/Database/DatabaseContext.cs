@@ -6,6 +6,6 @@ namespace Core.Models.Database
     {
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
 
-        public DbSet<User> Users{ get; set; }
+        public DbSet<UserDatabaseModel> Users{ get; set; }
     }
 }
