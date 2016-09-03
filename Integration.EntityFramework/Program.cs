@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApplication
+namespace Integration.EntityFramework
 {
     public class Program
     {

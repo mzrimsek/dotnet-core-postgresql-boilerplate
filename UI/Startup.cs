@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Integration.EntityFramework.Models;
 
-namespace Core
+namespace UI
 {
     public class Startup
     {
