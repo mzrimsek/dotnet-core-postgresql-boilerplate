@@ -1,10 +1,10 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using Core.Models.Database;
-using Core.Respositories;
-using Core.Mappers;
+using Integration.EntityFramework.Models;
+using Integration.EntityFramework.Repositories;
+using UI.Mappers;
 
-namespace Core.Controllers
+namespace UI.Controllers
 {
     public class HomeController : Controller
     {

@@ -6,9 +6,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/Core/bin/Debug/netcoreapp1.0/Core.dll",
+            "program": "${workspaceRoot}/UI/bin/Debug/netcoreapp1.0/UI.dll",
             "args": [],
-            "cwd": "${workspaceRoot}/Core",
+            "cwd": "${workspaceRoot}/UI",
             "stopAtEntry": false,
             "externalConsole": false
         },
@@ -17,9 +17,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/Core/bin/Debug/netcoreapp1.0/Core.dll",
+            "program": "${workspaceRoot}/UI/bin/Debug/netcoreapp1.0/UI.dll",
             "args": [],
-            "cwd": "${workspaceRoot}/Core",
+            "cwd": "${workspaceRoot}/UI",
             "stopAtEntry": false,
             "launchBrowser": {
                 "enabled": true,
@@ -39,7 +39,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceRoot}/Core/Views"
+                "/Views": "${workspaceRoot}/UI/Views"
             }
         },
         {

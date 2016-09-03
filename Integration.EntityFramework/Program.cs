@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace Core
+namespace Integration.EntityFramework
 {
     public class Program
     {

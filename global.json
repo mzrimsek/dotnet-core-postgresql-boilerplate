@@ -1,7 +1,8 @@
 {
     "projects":[
         "Core",
+        "Integration.EntityFramework",
         "Test.Unit",
-        "Test.Integration"
+        "UI"
     ]
 }

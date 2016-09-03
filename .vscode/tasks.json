@@ -3,7 +3,7 @@
     "command": "dotnet",
     "isShellCommand": true,
     "options": {
-        "cwd": "${workspaceRoot}/Core"
+        "cwd": "${workspaceRoot}/UI"
     },
     "args": [],
     "tasks": [

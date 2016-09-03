@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore": "1.0.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "Core": {
+          "target": "project"
+        }
+      },
+      "imports": "dnxcore50"
+    }
+  },
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools": {
+      "version": "1.0.0-preview2-final",
+      "imports": "portable-net45+win8+dnxcore50"
+    }
+  }
+}

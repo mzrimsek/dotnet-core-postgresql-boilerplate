@@ -1,6 +1,6 @@
-namespace Core.Models.View
+namespace Core.Models
 {
-    public class UserViewModel
+    public class UserDomainModel
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

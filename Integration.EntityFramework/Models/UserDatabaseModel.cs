@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Core.Models.Database
+namespace Integration.EntityFramework.Models
 {
     [Table("user")]
     public class UserDatabaseModel
