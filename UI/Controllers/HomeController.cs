@@ -1,18 +1,17 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using Integration.EntityFramework.Models;
-using Integration.EntityFramework.Repositories;
+using Core.Interfaces;
 using UI.Mappers;
 
 namespace UI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly UserRepository _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public HomeController(DatabaseContext databaseContext)
+        public HomeController(IUserRepository userRepository)
         {
-            _userRepository = new UserRepository(databaseContext);
+            _userRepository = userRepository;
         }
 
         [HttpGet("/")]
