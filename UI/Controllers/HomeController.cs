@@ -1,6 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using Core.Mappers;
+using Integration.EntityFramework.Models;
 using Integration.EntityFramework.Repositories;
 using UI.Mappers;
 
