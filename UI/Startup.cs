@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Core.Interfaces;
 using Integration.EntityFramework.Models;
+using Integration.EntityFramework.Repositories;
 
 namespace UI
 {
@@ -28,6 +30,8 @@ namespace UI
 
             var connectionString = Configuration["DbContextSettings:ConnectionString"];
             services.AddDbContext<DatabaseContext>(opts => opts.UseNpgsql(connectionString));
+
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         public void Configure(IApplicationBuilder app)
