@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using UI.Mappers;
 using Core.Interfaces;
+using UI.Mappers;
 
 namespace UI.Controllers
 {

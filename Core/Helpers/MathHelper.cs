@@ -1,5 +1,3 @@
-using System;
-
 namespace Core.Helpers
 {
     public static class MathHelper
