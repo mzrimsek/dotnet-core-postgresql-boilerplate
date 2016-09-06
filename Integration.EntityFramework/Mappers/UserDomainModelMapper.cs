@@ -9,9 +9,11 @@ namespace Integration.EntityFramework.Mappers
         {
             return new UserDomainModel
             {
+                Id = databaseModel.Id,
                 FirstName = databaseModel.FirstName,
                 LastName = databaseModel.LastName,
-                Email = databaseModel.Email
+                Email = databaseModel.Email,
+                Password = databaseModel.Password
             };
         }
     }

@@ -21,16 +21,18 @@ namespace Integration.EntityFramework.Repositories
             return UserDomainModelMapper.MapFrom(userFromDb);
         }
 
-        public void Save(UserDatabaseModel userToSave)
+        public void Save(UserDomainModel userToSave)
         {
-            var userFromDb = _databaseContext.Users.SingleOrDefault(x => x.Id == userToSave.Id);
+            var databaseModel = UserDatabaseModelMapper.MapFrom(userToSave);
+            var userFromDb = _databaseContext.Users.SingleOrDefault(x => x.Id == databaseModel.Id);
+
             if(userFromDb != null)
             {
-                userFromDb = userToSave;
+                userFromDb = databaseModel;
             }
             else
             {
-                _databaseContext.Users.Add(userToSave);
+                _databaseContext.Users.Add(databaseModel);
             }
             _databaseContext.SaveChanges();
         }
