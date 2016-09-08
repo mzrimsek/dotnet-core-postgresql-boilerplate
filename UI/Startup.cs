@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Core.Interfaces;
-using Integration.EntityFramework.Models;
 using Integration.EntityFramework.Repositories;
-using UI.Getters;
 using UI.Helpers;
 
 namespace UI
@@ -18,7 +16,7 @@ namespace UI
 
         public Startup(IHostingEnvironment env)
         {
-            var builder = ConfigurationBuilderGetter.GetConfigurationBuilder(env);
+            var builder = StartupHelper.GetConfigurationBuilder(env);
             Configuration = builder.Build();
         }
 
@@ -31,7 +29,7 @@ namespace UI
         {
             services.AddMvc();
 
-            DatabaseConnectionHelper.AddDatabaseConnectionToServices(services, Configuration);
+            StartupHelper.AddDatabaseConnectionToServices(services, Configuration);
 
             services.AddScoped<IUserRepository, UserRepository>();
         }
