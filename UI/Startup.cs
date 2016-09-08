@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Core.Interfaces;
-using Integration.EntityFramework.Repositories;
 using UI.Helpers;
 
 namespace UI
@@ -30,8 +27,7 @@ namespace UI
             services.AddMvc();
 
             StartupHelper.AddDatabaseConnectionToServices(services, Configuration);
-
-            services.AddScoped<IUserRepository, UserRepository>();
+            StartupHelper.AddDependencyInjectionToServices(services);
         }
     }
 }
