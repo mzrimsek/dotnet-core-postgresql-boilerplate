@@ -23,16 +23,19 @@ namespace Integration.EntityFramework.Repositories
 
         public void Save(UserDomainModel userToSave)
         {
-            var databaseModel = UserDatabaseModelMapper.MapFrom(userToSave);
-            var userFromDb = _databaseContext.Users.SingleOrDefault(x => x.Id == databaseModel.Id);
+            var mappedDbModel = UserDatabaseModelMapper.MapFrom(userToSave);
+            var userFromDb = _databaseContext.Users.SingleOrDefault(x => x.Id == mappedDbModel.Id);
 
             if(userFromDb != null)
             {
-                userFromDb = databaseModel;
+                userFromDb.FirstName = mappedDbModel.FirstName;
+                userFromDb.LastName = mappedDbModel.LastName;
+                userFromDb.Email = mappedDbModel.Email;
+                userFromDb.Password = mappedDbModel.Password;
             }
             else
             {
-                _databaseContext.Users.Add(databaseModel);
+                _databaseContext.Users.Add(mappedDbModel);
             }
             _databaseContext.SaveChanges();
         }
