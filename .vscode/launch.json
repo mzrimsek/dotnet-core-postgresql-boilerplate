@@ -2,17 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceRoot}/UI/bin/Debug/netcoreapp1.0/UI.dll",
-            "args": [],
-            "cwd": "${workspaceRoot}/UI",
-            "stopAtEntry": false,
-            "externalConsole": false
-        },
-        {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
@@ -41,12 +30,6 @@
             "sourceFileMap": {
                 "/Views": "${workspaceRoot}/UI/Views"
             }
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processId": "${command.pickProcess}"
         }
     ]
 }
