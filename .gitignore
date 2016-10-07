@@ -2,3 +2,5 @@ obj/
 bin/
 project.lock.json
 TestResult.xml
+node_modules/
+wwwroot/
