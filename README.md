@@ -3,10 +3,18 @@
 The aim of this project is to make setting up a new .NET Core MVC project as painless as possible.
 
 ## Technologies included:
+
+### master
 * .NET Core
 * Entity Framework Core
 * PostgreSQL
 * NUnit Test Framework
+
+### react-redux
+* React
+* React-Router
+* Redux
+* SASS
 
 ## Documentation
 Here you'll find posts I've made that walk through how this project has arrived at its current state.  
