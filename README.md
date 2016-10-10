@@ -22,3 +22,4 @@ Here you'll find posts I've made that walk through how this project has arrived 
 * [Setting up the server and database](https://medium.com/@mikezrimsek/setting-up-a-net-core-server-with-entity-framework-core-using-a-postgresql-database-242438f7d9c3)
 * [Improving project design with layering](https://medium.com/@mikezrimsek/using-layering-to-improve-your-projects-underlying-design-b3c596f8f349)
 * Adding NUnit tests (coming soon...)
+* [React-Redux - borrowed heavily from davezuko](https://github.com/davezuko/react-redux-starter-kit)
