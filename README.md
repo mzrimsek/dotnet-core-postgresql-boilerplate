@@ -4,13 +4,13 @@ The aim of this project is to make setting up a new .NET Core MVC project as pai
 
 ## Technologies included:
 
-### master
+### [master branch](https://github.com/mzrimsek/dotnet-core-postgresql-boilerplate/tree/master)
 * .NET Core
 * Entity Framework Core
 * PostgreSQL
 * NUnit Test Framework
 
-### react-redux
+### [react-redux branch](https://github.com/mzrimsek/dotnet-core-postgresql-boilerplate/tree/react-redux)
 * React
 * React-Router
 * Redux
