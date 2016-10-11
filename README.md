@@ -2,6 +2,10 @@
 
 The aim of this project is to make setting up a new .NET Core MVC project as painless as possible.
 
+## Requirements
+* [Dotnet Core](https://www.microsoft.com/net/core)
+* [PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/)
+
 ## Technologies included:
 * .NET Core
 * Entity Framework Core
