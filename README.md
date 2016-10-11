@@ -12,6 +12,14 @@ The aim of this project is to make setting up a new .NET Core MVC project as pai
 * PostgreSQL
 * NUnit Test Framework
 
+## Usage
+To get all dependencies in the project built...
+~~~~
+git clone
+./startup.sh
+~~~~
+You still have to do some leg work getting the database set up, but I've detailed how to do that in the first documentation link.  
+
 ## Documentation
 Here you'll find posts I've made that walk through how this project has arrived at its current state.  
 
