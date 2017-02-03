@@ -2,6 +2,8 @@
 
 The aim of this project is to make setting up a new .NET Core MVC project as painless as possible.
 
+Please note this project has not been updated for the newest versions of .NET Core. The basic idea of the repo might still apply, but upgrading to the latest version may break this project.
+
 ## Requirements
 * [Dotnet Core](https://www.microsoft.com/net/core)
 * [PostgreSQL](https://www.postgresql.org/download/linux/ubuntu/)
