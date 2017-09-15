@@ -1,8 +1,8 @@
 # dotnet-core-postgresql-boilerplate
 
-The aim of this project is to make setting up a new .NET Core MVC project as painless as possible.
+PLEASE NOTE THIS PROJECT IS DEPRECATED AND IS RUNNING AN OLD VERSION OF DOTNET CORE. IT IS VERY LIKELY THE PROJECT WILL NOT RUN AND SHOULD NOW ONLY SERVE AS A REFERENCE FOR PROJECT ARCHITECTURE AND ORGANIZATION.
 
-Please note this project has not been updated for the newest versions of .NET Core. The basic idea of the repo might still apply, but upgrading to the latest version may break this project.
+The aim of this project is to make setting up a new .NET Core MVC project as painless as possible.
 
 ## Requirements
 * [Dotnet Core](https://www.microsoft.com/net/core)
